@@ -1,5 +1,10 @@
-(load "mk.scm")
-(load "test-check.scm")
+#lang racket
+
+;;(load "mk.scm")
+(require "mk.scm")
+
+;;(load "test-check.scm")
+(require "test-check.scm")
 
 (define (!-o gamma expr type)
   (conde
@@ -499,82 +504,82 @@
           q))
     '((pair (pair (pair (pair (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))) (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))))) (pair (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))) (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))))) (pair (pair (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))) (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))))) (pair (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))) (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))))))) (pair (pair (pair (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))) (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))))) (pair (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))) (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))))) (pair (pair (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))) (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))))) (pair (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))))) (pair (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))) (pair (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0))) (pair (pair (_.0 -> _.0) (_.0 -> _.0)) (pair (_.0 -> _.0) (_.0 -> _.0)))))))))))
 
-;;; This test returns after several minutes, producing an absurdly gigantic type!
-#|
-(test "!-30e"
-  (run* (q)
-    (!-o '()
-         '(let ((f0 (lambda (x) (cons x x))))
-            (let ((f1 (lambda (y) (f0 (f0 y)))))
-              (let ((f2 (lambda (y) (f1 (f1 y)))))
-                (let ((f3 (lambda (y) (f2 (f2 y)))))
-                  (let ((f4 (lambda (y) (f3 (f3 y)))))
-                    (f4 (lambda (z) z)))))))
-         q))
-  '???)
-|#
+;; ;;; This test returns after several minutes, producing an absurdly gigantic type!
+;; #|
+;; (test "!-30e"
+;;   (run* (q)
+;;     (!-o '()
+;;          '(let ((f0 (lambda (x) (cons x x))))
+;;             (let ((f1 (lambda (y) (f0 (f0 y)))))
+;;               (let ((f2 (lambda (y) (f1 (f1 y)))))
+;;                 (let ((f3 (lambda (y) (f2 (f2 y)))))
+;;                   (let ((f4 (lambda (y) (f3 (f3 y)))))
+;;                     (f4 (lambda (z) z)))))))
+;;          q))
+;;   '???)
+;; |#
 
-  (test "!-24a"
-    (run* (q)
-      (!-o '() '(let ((f0 (lambda (x) x)))
-                 (f0 (lambda (z) z))) q))
-    '((_.0 -> _.0)))
+;;   (test "!-24a"
+;;     (run* (q)
+;;       (!-o '() '(let ((f0 (lambda (x) x)))
+;;                  (f0 (lambda (z) z))) q))
+;;     '((_.0 -> _.0)))
 
-  (test "!-24b"
-    (run* (q)
-      (!-o '()
-          '(let ((f0 (lambda (x) x)))
-             (let ((f1 (lambda (y) (f0 (f0 y)))))
-               (f1 (lambda (z) z))))
-          q))
-    '((_.0 -> _.0)))
+;;   (test "!-24b"
+;;     (run* (q)
+;;       (!-o '()
+;;           '(let ((f0 (lambda (x) x)))
+;;              (let ((f1 (lambda (y) (f0 (f0 y)))))
+;;                (f1 (lambda (z) z))))
+;;           q))
+;;     '((_.0 -> _.0)))
 
-  (test "!-24c"
-    (run* (q)
-      (!-o '()
-          '(let ((f0 (lambda (x) x)))
-             (let ((f1 (lambda (y) (f0 (f0 y)))))
-               (let ((f2 (lambda (y) (f1 (f1 y)))))
-                 (f2 (lambda (z) z)))))
-          q))
-    '((_.0 -> _.0)))
+;;   (test "!-24c"
+;;     (run* (q)
+;;       (!-o '()
+;;           '(let ((f0 (lambda (x) x)))
+;;              (let ((f1 (lambda (y) (f0 (f0 y)))))
+;;                (let ((f2 (lambda (y) (f1 (f1 y)))))
+;;                  (f2 (lambda (z) z)))))
+;;           q))
+;;     '((_.0 -> _.0)))
 
-  (test "!-24d"
-    (run* (q)
-      (!-o '()
-          '(let ((f0 (lambda (x) x)))
-             (let ((f1 (lambda (y) (f0 (f0 y)))))
-               (let ((f2 (lambda (y) (f1 (f1 y)))))
-                 (let ((f3 (lambda (y) (f2 (f2 y)))))
-                   (f3 (lambda (z) z))))))
-          q))
-    '((_.0 -> _.0)))
+;;   (test "!-24d"
+;;     (run* (q)
+;;       (!-o '()
+;;           '(let ((f0 (lambda (x) x)))
+;;              (let ((f1 (lambda (y) (f0 (f0 y)))))
+;;                (let ((f2 (lambda (y) (f1 (f1 y)))))
+;;                  (let ((f3 (lambda (y) (f2 (f2 y)))))
+;;                    (f3 (lambda (z) z))))))
+;;           q))
+;;     '((_.0 -> _.0)))
 
-#!eof
+;; #!eof
 
-;; these tests take too long to terminate!
+;; ;; these tests take too long to terminate!
 
-  (test "!-24e"
-    (run* (q)
-      (!-o '()
-          '(let ((f0 (lambda (x) x)))
-             (let ((f1 (lambda (y) (f0 (f0 y)))))
-               (let ((f2 (lambda (y) (f1 (f1 y)))))
-                 (let ((f3 (lambda (y) (f2 (f2 y)))))
-                   (let ((f4 (lambda (y) (f3 (f3 y)))))
-                     (f4 (lambda (z) z)))))))
-          q))
-    '((_.0 -> _.0)))  
+;;   (test "!-24e"
+;;     (run* (q)
+;;       (!-o '()
+;;           '(let ((f0 (lambda (x) x)))
+;;              (let ((f1 (lambda (y) (f0 (f0 y)))))
+;;                (let ((f2 (lambda (y) (f1 (f1 y)))))
+;;                  (let ((f3 (lambda (y) (f2 (f2 y)))))
+;;                    (let ((f4 (lambda (y) (f3 (f3 y)))))
+;;                      (f4 (lambda (z) z)))))))
+;;           q))
+;;     '((_.0 -> _.0)))  
 
-  (test "!-24f"
-    (run* (q)
-      (!-o '()
-          '(let ((f0 (lambda (x) x)))
-             (let ((f1 (lambda (y) (f0 (f0 y)))))
-               (let ((f2 (lambda (y) (f1 (f1 y)))))
-                 (let ((f3 (lambda (y) (f2 (f2 y)))))
-                   (let ((f4 (lambda (y) (f3 (f3 y)))))
-                     (let ((f5 (lambda (y) (f4 (f4 y)))))
-                       (f5 (lambda (z) z))))))))
-          q))
-    '((_.0 -> _.0)))
+;;   (test "!-24f"
+;;     (run* (q)
+;;       (!-o '()
+;;           '(let ((f0 (lambda (x) x)))
+;;              (let ((f1 (lambda (y) (f0 (f0 y)))))
+;;                (let ((f2 (lambda (y) (f1 (f1 y)))))
+;;                  (let ((f3 (lambda (y) (f2 (f2 y)))))
+;;                    (let ((f4 (lambda (y) (f3 (f3 y)))))
+;;                      (let ((f5 (lambda (y) (f4 (f4 y)))))
+;;                        (f5 (lambda (z) z))))))))
+;;           q))
+;;     '((_.0 -> _.0)))

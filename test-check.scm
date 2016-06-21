@@ -1,3 +1,6 @@
+#lang racket
+(provide (all-defined-out))
+
 (define-syntax test
   (syntax-rules ()
     ((_ title tested-expression expected-result)

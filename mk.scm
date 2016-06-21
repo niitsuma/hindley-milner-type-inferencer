@@ -1,3 +1,10 @@
+#lang racket
+
+(provide (all-defined-out))
+
+
+(require "racket-compat.rkt")
+
 ;;; 28 November 02014 WEB
 ;;;
 ;;; * Fixed missing unquote before E in 'drop-Y-b/c-dup-var'
@@ -174,7 +181,7 @@
 (define-syntax run
   (syntax-rules ()
     ((_ n (q) g0 g ...)
-     (take n
+     (take_ n
        (lambdaf@ ()
          ((fresh (q) g0 g ...
             (lambdag@ (final-c)
@@ -188,17 +195,17 @@
   (syntax-rules ()
     ((_ (q0 q ...) g0 g ...) (run #f (q0 q ...) g0 g ...))))
  
-(define take
+(define take_
   (lambda (n f)
     (cond
       ((and n (zero? n)) '())
       (else
        (case-inf (f) 
          (() '())
-         ((f) (take n f))
+         ((f) (take_ n f))
          ((c) (cons c '()))
          ((c f) (cons c
-                  (take (and n (- n 1)) f))))))))
+                  (take_ (and n (- n 1)) f))))))))
 
 (define-syntax conde
   (syntax-rules ()
